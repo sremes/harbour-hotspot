@@ -4,26 +4,37 @@ Version: 0.1
 Release: 1
 Group: Qt/Qt
 URL: http://example.org/
-License: LICENSE
+License: "    WiFi Hotspot - use your Sailfish device to create a WiFi hotspot\n    Copyright
+  (C) 2013 Sami Remes <sami.remes@gmail.com>.\n\n    This program is free software:
+  you can redistribute it and/or modify\n    it under the terms of the GNU General
+  Public License as published by\n    the Free Software Foundation, either version
+  3 of the License, or\n    (at your option) any later version.\n\n    This program
+  is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY;
+  without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR
+  PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should
+  have received a copy of the GNU General Public License\n    along with this program.
+  \ If not, see <http://www.gnu.org/licenses/>.\n"
 Sources:
 - '%{name}-%{version}.tar.bz2'
-Description: |
-  Short description of my SailfishOS Application
+Description: |-
+  Use your Sailfish-powered device to create a WiFi hotspot. The current version does not handle any possible error situations, and will not report if errors do happen.
 Configure: none
 Builder: qtc5
 PkgConfigBR:
-- sailfishapp >= 0.0.10
-- Qt5Core
-- Qt5Qml
 - Qt5Quick
+- Qt5Qml
+- Qt5Core
+- sailfishapp >= 0.0.10
 Requires:
 - sailfishsilica-qt5 >= 0.10.9
+- connman-qt5
 Files:
-- /usr/share/icons/hicolor/86x86/apps
-- /usr/share/applications
-- /usr/share/harbour-hotspot
-- /usr/bin
-- '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
-- '%{_datadir}/applications/%{name}.desktop'
-- '%{_datadir}/%{name}/qml'
 - '%{_bindir}'
+- '%{_datadir}/%{name}/qml'
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
+- /usr/bin
+- /usr/share/harbour-hotspot
+- /usr/share/applications
+- /usr/share/icons/hicolor/86x86/apps
+PkgBR: []

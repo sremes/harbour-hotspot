@@ -1,4 +1,4 @@
-# The name of your app.
+# WiFi Hotspot.
 # NOTICE: name defined in TARGET has a corresponding QML filename.
 #         If name defined in TARGET is changed, following needs to be
 #         done to match new name:
