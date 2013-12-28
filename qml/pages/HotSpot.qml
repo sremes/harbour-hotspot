@@ -64,6 +64,7 @@ Page {
             TextField {
                 id: input_name
                 text: app.hotspot_name
+                width: page.width
                 EnterKey.enabled: text.length > 0
                 EnterKey.onClicked: {
                     app.hotspot_name = input_name.text
@@ -80,6 +81,7 @@ Page {
             TextField {
                 id: input_passwd
                 text: app.hotspot_passwd
+                width: page.width
                 EnterKey.enabled: text.length > 7
                 EnterKey.onClicked: {
                     app.hotspot_passwd = input_passwd.text
